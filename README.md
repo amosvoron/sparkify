@@ -2,13 +2,13 @@
 This is a capstone Spark project for Udacity Data Science program whose mission is to predict churn for the imaginary music streaming service called *Sparkify* to emulate a real streaming service like Spotify.
 
 ## Motivation
-I found very attractive the idea to address big data in the Udacity's capstone project. The project data comes with the small sample dataset available on local machine and with the big dataset of 12GB available on Amazon EMR cluster. I have performed data exploratory analysis, feature engineering, and modelling with both datasets, however, the small dataset was ideal to get to know better the data while the full dataset was more suitable for modelling and model fine tuning since, as we all know, *the more data, the better*.    
+I found very attractive the idea to address big data in the Udacity's capstone project. The project data comes with the small sample dataset available on local machine and with the big dataset of 12GB available on Amazon EMR cluster. I have performed data exploratory analysis, feature engineering, and modelling with both datasets, however, the small dataset was ideal to get to know better the data while the full dataset was more suitable for modelling and model fine tuning given that *the more data, the better*.   
 
 ## Project goal
 Our principal metric is **F1-score**. The project goal is to reach (around) **0.9** of F1-score. The F1-score below **0.8** is considered as unsatisfactory.
 
 ## Results
-We have achieved **0.8994** on cluster and **0.9284** on sample dataset, both for *cancelled users*. The result for *downgraded* users - only available on cluster - is **0.8268** of F1-score.
+We have achieved **0.8994** on cluster and **0.9284** on sample dataset, both for *cancelled users*. The result for *downgraded* users - only available on cluster - is **0.8268** of F1-score. Please check the [main project notebook](Sparkify.ipybn) and the medium article [Churn prediction with Sparkify](https://medium.com/@amos.voron/churn-prediction-with-sparkify-6f9127da7235) for project details.
 
 ## Installation
 ### Clone
@@ -22,7 +22,6 @@ $ git clone https://github.com/amosvoron/sparkify.git
 ## Repository Description
 
 ```sh
-- images							                       # directory with images (used in main project notebook)
 - Sparkify-cluster-cancelled-bestmodel.py                  # python script for cancelled users best model fitting on cluster
 - Sparkify-cluster-cancelled-feature-engineering.ipynb     # notebook with feature engineering code for cancelled users
 - Sparkify-cluster-downgraded-bestmodel.py                 # python script for downgraded users best model fitting on cluster
